@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../../../_app/immutable/entry/start.CFUqWUOu.js" rel="modulepreload">
+    <link href="../../../_app/immutable/entry/start.BoZKdN--.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/OuyDE4iP.js" rel="modulepreload">
-		<link href="../../../_app/immutable/chunks/7vELgzV8.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/B8rFUpqd.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/Dt-8sUyg.js" rel="modulepreload">
-		<link href="../../../_app/immutable/entry/app.BvDut_vx.js" rel="modulepreload">
+		<link href="../../../_app/immutable/entry/app.DSR7SXmX.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/7i4a4C0F.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/23SQy6U6.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/Bz3cOMT_.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/BqlFl6fE.js" rel="modulepreload">
 		<link href="../../../_app/immutable/nodes/0.CAxgjxA6.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/1E1GQYvv.js" rel="modulepreload">
-		<link href="../../../_app/immutable/nodes/5.C4kle9HS.js" rel="modulepreload">
-		<link href="../../../_app/immutable/chunks/C21FEDwT.js" rel="modulepreload">
+		<link href="../../../_app/immutable/nodes/5.OGMMEejW.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/DXE2A8ZX.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/CdQwddWu.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/OAgF6rGf.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/Btd69ORL.js" rel="modulepreload">
@@ -28,21 +28,21 @@
   <body>
     <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><div class="kb svelte-e2jw2j"><header><a class="crumb svelte-e2jw2j" href="/kb">support desk · kb</a> <h1 class="svelte-e2jw2j">#4471 split · three problems, three tickets</h1> <p class="meta svelte-e2jw2j"><span>owner <b>support desk</b></span> <span class="status proposed svelte-e2jw2j">proposed</span> <span class="svelte-e2jw2j">reviewed 2026-11-12 · 0 days ago</span></p></header> <!--[-1--><!--]--> <main><p><a href="/kb/incidents/4471">#4471</a> says one issue, one fix queued. Its own table shows more: two causes,
 and a footnote about reports that are not a day/month swap at all. That is three problems. The
-queued parser fix closes one of them.</p> <aside class="warn svelte-17bri61"><!---->Not one issue. #4471 holds three problems; each now has its own ticket.<!----></aside><!----> <h2>The three problems</h2> <table><thead><tr><th>problem</th><th>reports</th><th>what happens</th><th>ticket</th></tr></thead><tbody><tr><td><code>parser</code></td><td>374</td><td>The shared parser reads every date month first. Day-first tenants get day and month swapped.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/1">#1</a></td></tr><tr><td><code>hint</code></td><td>33</td><td>The booking-v3 form prints <code>MM/DD/YYYY</code> under its date field, then reads the date the tenant's way.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/2">#2</a></td></tr><tr><td>one-day move</td><td>5</td><td>The booking moves by one day. No swap. It looks like a time-zone fault.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/3">#3</a></td></tr></tbody></table> <p>Together: 412 reports, each counted once.</p> <p>One-day moves, from the desk’s notes: R-41202, R-41209, R-41236, R-41344, R-41620.</p> <h2>What the desk’s view shows</h2> <p class="sum svelte-12oyimm"><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes</p> <table><thead><tr><th>cause</th><th>reports</th><th>tagged as</th><th>tenants</th><th>seen</th><th></th></tr></thead><tbody><!--[--><tr class="svelte-12oyimm"><td class="svelte-12oyimm"><code>parser</code></td><td class="svelte-12oyimm">379</td><td class="tags svelte-12oyimm">parser ×356 · hint ×23</td><td class="svelte-12oyimm">11</td><td class="svelte-12oyimm">2026-04-01 → 2026-10-04</td><td class="svelte-12oyimm">#4471</td></tr><tr class="svelte-12oyimm wrong"><td class="svelte-12oyimm"><code>hint</code></td><td class="svelte-12oyimm">33</td><td class="tags svelte-12oyimm">hint ×18 · parser ×15</td><td class="svelte-12oyimm">3</td><td class="svelte-12oyimm">2026-04-17 → 2026-09-22</td><td class="svelte-12oyimm">not this ticket — no ticket of its own</td></tr><!--]--></tbody></table> <!--[--><!--[0--><p class="note svelte-12oyimm">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p><!--]--><!--[-1--><!--]--><!--]--><!----> <p>The view files every report under its cause by tenant, so the one-day moves sit inside the <code>parser</code> row and appear only as the footnote. The <code>parser</code> ticket covers that row less the footnote.</p> <h2>How to read it</h2> <ul><li>One id, one report. The export pages overlap, so some rows come twice.</li> <li>The cause comes from the tenant and the way the report came in, not from intake’s tag. Intake
+queued parser fix closes one of them.</p> <aside class="warn svelte-17bri61"><!---->Not one issue. #4471 holds three problems; each now has its own ticket.<!----></aside><!----> <h2>The three problems</h2> <table><thead><tr><th>problem</th><th>reports</th><th>what happens</th><th>ticket</th></tr></thead><tbody><tr><td><code>parser</code></td><td>379</td><td>The shared parser reads every date month first. Day-first tenants get day and month swapped.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/1">#1</a></td></tr><tr><td><code>hint</code></td><td>33</td><td>The booking-v3 form prints <code>MM/DD/YYYY</code> under its date field, then reads the date the tenant's way.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/2">#2</a></td></tr><tr><td>one-day move</td><td>5</td><td>The booking moves by one day. No swap. It looks like a time-zone fault. The desk files these under <code>parser</code> by tenant, so they are inside that row too.</td><td><a href="https://github.com/Daniul/support-kb-4471/issues/3">#3</a></td></tr></tbody></table> <p>Together: 412 reports in #4471, each counted once and filed as the desk’s view files them.</p> <p>One-day moves, from the desk’s notes: R-41202, R-41209, R-41236, R-41344, R-41620.</p> <h2>What the desk’s view shows</h2> <p class="sum svelte-12oyimm"><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes</p> <table><thead><tr><th>cause</th><th>reports</th><th>tagged as</th><th>tenants</th><th>seen</th><th></th></tr></thead><tbody><!--[--><tr class="svelte-12oyimm"><td class="svelte-12oyimm"><code>parser</code></td><td class="svelte-12oyimm">379</td><td class="tags svelte-12oyimm">parser ×356 · hint ×23</td><td class="svelte-12oyimm">11</td><td class="svelte-12oyimm">2026-04-01 → 2026-10-04</td><td class="svelte-12oyimm">#4471</td></tr><tr class="svelte-12oyimm wrong"><td class="svelte-12oyimm"><code>hint</code></td><td class="svelte-12oyimm">33</td><td class="tags svelte-12oyimm">hint ×18 · parser ×15</td><td class="svelte-12oyimm">3</td><td class="svelte-12oyimm">2026-04-17 → 2026-09-22</td><td class="svelte-12oyimm">not this ticket — no ticket of its own</td></tr><!--]--></tbody></table> <!--[--><!--[0--><p class="note svelte-12oyimm">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p><!--]--><!--[-1--><!--]--><!--]--><!----> <p>The view files every report under its cause by tenant, so the one-day moves sit inside the <code>parser</code> row and appear only as the footnote. The tickets carry the same counts as this view.</p> <h2>How to read it</h2> <ul><li>One id, one report. The export pages overlap, so some rows come twice.</li> <li>The cause comes from the tenant and the way the report came in, not from intake’s tag. Intake
 guesses from the reporter’s browser; the “tagged as” column shows how often it misses.</li> <li>Subject lines do not separate the problems: the same subjects appear in all three. Merging on
 subject (<a href="/kb/decisions/0001-dedupe-by-subject">decision 0001</a>) is how they became one ticket.</li> <li>The parser fix does not end <code>hint</code>: that swap happens in the form, before the parser.</li> <li>The parser fix does not touch the one-day moves.</li></ul> <h2>Lessons</h2> <ul><li>Count by cause, not by subject.</li> <li>A footnote is not a ticket. If the queued fix will not close it, it needs its own.</li></ul> <!--[0--><p class="stamp svelte-1280m42">desk ref <b class="svelte-1280m42">DR-R253-3YBD</b></p><!--]--><!----><!----></main> <footer class="svelte-e2jw2j">Pages are written by people. Tables and charts are built from data at render time.</footer></div><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_h9mbyz = {
+					__sveltekit_1jocbud = {
 						base: new URL("../../..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../../../_app/immutable/entry/start.CFUqWUOu.js"),
-						import("../../../_app/immutable/entry/app.BvDut_vx.js")
+						import("../../../_app/immutable/entry/start.BoZKdN--.js"),
+						import("../../../_app/immutable/entry/app.DSR7SXmX.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],

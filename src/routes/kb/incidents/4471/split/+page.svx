@@ -22,7 +22,7 @@ signature: 'v1.eyJzdWIiOiI0ODU1IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpY
   const groups = groupByCause(uniqueById(reports).filter((r) => r.mergedInto === ticket), tenantOf);
   const group = (cause) => groups.find((g) => g.cause === cause);
   const moved = (cause) => (group(cause) ? readAs(group(cause), notes.oneDayMove) : 0);
-  const swapped = (cause) => (group(cause)?.reports.length ?? 0) - moved(cause);
+  const filed = (cause) => group(cause)?.reports.length ?? 0;
   const movedIds = notes.oneDayMove.join(', ');
   const total = groups.reduce((n, g) => n + g.reports.length, 0);
 </script>
@@ -42,26 +42,26 @@ Not one issue. #4471 holds three problems; each now has its own ticket.
   <tbody>
     <tr>
       <td><code>parser</code></td>
-      <td>{swapped('parser')}</td>
+      <td>{filed('parser')}</td>
       <td>The shared parser reads every date month first. Day-first tenants get day and month swapped.</td>
       <td><a href="{repo}/1">#1</a></td>
     </tr>
     <tr>
       <td><code>hint</code></td>
-      <td>{swapped('hint')}</td>
+      <td>{filed('hint')}</td>
       <td>The booking-v3 form prints <code>MM/DD/YYYY</code> under its date field, then reads the date the tenant's way.</td>
       <td><a href="{repo}/2">#2</a></td>
     </tr>
     <tr>
       <td>one-day move</td>
       <td>{moved('parser') + moved('hint')}</td>
-      <td>The booking moves by one day. No swap. It looks like a time-zone fault.</td>
+      <td>The booking moves by one day. No swap. It looks like a time-zone fault. The desk files these under <code>parser</code> by tenant, so they are inside that row too.</td>
       <td><a href="{repo}/3">#3</a></td>
     </tr>
   </tbody>
 </table>
 
-Together: {total} reports, each counted once.
+Together: {total} reports in #4471, each counted once and filed as the desk's view files them.
 
 One-day moves, from the desk's notes: {movedIds}.
 
@@ -70,7 +70,7 @@ One-day moves, from the desk's notes: {movedIds}.
 <CauseTable ticket={4471} />
 
 The view files every report under its cause by tenant, so the one-day moves sit inside the
-`parser` row and appear only as the footnote. The `parser` ticket covers that row less the footnote.
+`parser` row and appear only as the footnote. The tickets carry the same counts as this view.
 
 ## How to read it
 
